@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">State logger</string>
+    <string name="relais_1">Disjoncteur 1</string>
+    <string name="relais_2">Disjoncteur 2</string>
+    <string name="relais_3">Disjoncteur 3</string>
+    <string name="relais_4">Disjoncteur 4</string>
+    <string name="default_date">-- / -- / --</string>
+    <string name="default_hour">-- : -- : --</string>
+    <string name="dev_in_progress">Page en cours de développement. Revenez demain</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/transparent_gray"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp"
+    android:layout_margin="10dp"
+    android:elevation="16dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_task_backgroud"
+        android:background="#FFFFFF">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_margin="13dp"
+            android:elevation="16dp"
+            app:cardBackgroundColor="@color/lightGray"
+            app:cardCornerRadius="@dimen/cardview_default_radius">
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardddd"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#00FFFFFF"
+            android:layout_toEndOf="@id/image_view"
+            android:outlineSpotShadowColor="#0626F8"
+            android:outlineAmbientShadowColor="#0626F8"
+            >
+        <TextView
+            android:id="@+id/line_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="Nom de la ligne"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/line_voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardddd"
+            android:layout_toEndOf="@id/image_view"
+            android:text="Niveau de tension"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/line_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_voltage"
+            android:layout_toEndOf="@id/image_view"
+            android:text="Type de la ligne"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/line_number_tower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_type"
+            android:layout_toEndOf="@id/image_view"
+            android:text="Nombre de pylônes"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/line_progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_number_tower"
+            android:layout_toEndOf="@id/image_view"
+            android:max="100"
+            android:min="0"
+            android:progress="50"
+            android:secondaryProgress="100"
+            android:secondaryProgressTint="#CAF8D5"
+            android:progressTint="@color/green_2" />
+
+        <TextView
+            android:id="@+id/line_progress_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_number_tower"
+            android:layout_alignStart="@id/line_progress_bar"
+            android:layout_alignEnd="@id/line_progress_bar"
+            android:gravity="center"
+            android:text="50%"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/dot"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center_horizontal"
+            android:text="&#8942;"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

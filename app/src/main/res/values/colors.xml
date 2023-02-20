@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#46FF00</color>
+    <color name="red">#FF0000</color>
+
+
+    <color name="lightGray">#EBF0F5</color>
+    <color name="darkGray">#202122</color>
+    <color name="green_1">#77d353</color>
+    <color name="green_2">#32F406</color>
+    <color name="green_3">#2CD506</color>
+    <color name="list_view_border_color">#01C2E6</color>
+    <color name="black_2">#1B1717</color>
+    <color name="dark_blue">#1A192B</color>
+    <color name="dark_blue_2">#001B2B</color>
+    <color name="red_2">#FF0000</color>
+    <color name="gray">#615E5E</color>
+    <color name="task_today">#F8D244</color>
+    <color name="spe">#FFE609</color>
+    <color name="blue_1">#001AFF</color>
+    <color name="blue_2">#2E40DD</color>
+    <color name="background_color1">#ECEEC7</color>
+    <color name="background_color2">#00FFFFFF</color>
+    <color name="background_color6">#039C09</color>
+    <color name="background_color3">#C4FFF8</color>
+    <color name="background_color4">#ACE8E1</color>
+    <color name="background_color5">#B2E8E2</color>
+    <color name="transparent_gray">#E3E8ED</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="task_complete_color">#46FF00</color>
+</resources>

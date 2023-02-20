@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+    <TextView
+        style="@style/default_title_text_style"
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/relais_1"/>
+
+    <ImageView
+        android:id="@+id/state_indicator_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+
+        android:layout_toEndOf="@id/tv1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_state_indicator"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_date_1"
+        style="@style/default_value_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:text="@string/default_date" />
+
+    <!--Disjoncteur 2-->
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/default_title_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_date_1"
+        android:layout_marginTop="20dp"
+        android:text="@string/relais_2" />
+    <ImageView
+        android:id="@+id/state_indicator_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_state_indicator"
+        android:layout_alignTop="@id/tv2"
+        android:scaleType="centerCrop"
+        android:layout_toEndOf="@id/tv2"
+        android:layout_marginStart="40dp"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_date_2"
+        style="@style/default_value_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:text="@string/default_date" />
+    <!--Disjoncteur 3-->
+    <TextView
+        style="@style/default_title_text_style"
+        android:id="@+id/tv3"
+        android:layout_below="@id/tv_date_2"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/relais_3"/>
+    <ImageView
+        android:id="@+id/state_indicator_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_state_indicator"
+        android:layout_alignTop="@id/tv3"
+        android:scaleType="centerCrop"
+        android:layout_toEndOf="@id/tv3"
+        android:layout_marginStart="40dp"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_date_3"
+        style="@style/default_value_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:text="@string/default_date" />
+    <!--Disjoncteur 3-->
+    <TextView
+        style="@style/default_title_text_style"
+        android:id="@+id/tv4"
+        android:layout_below="@id/tv_date_3"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/relais_4"/>
+    <ImageView
+        android:id="@+id/state_indicator_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_state_indicator"
+        android:layout_alignTop="@id/tv4"
+        android:scaleType="centerCrop"
+        android:layout_toEndOf="@id/tv4"
+        android:layout_marginStart="40dp"
+        app:tint="@color/black" />
+    <TextView
+        android:id="@+id/tv_date_4"
+        style="@style/default_value_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_date"
+        android:layout_below="@id/tv4"
+     />
+    <com.google.android.material.button.MaterialButton
+        android:textAppearance="@android:style/TextAppearance.Widget.Button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/historique_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:layout_alignTop="@id/state_indicator_1"
+        android:textFontWeight="20"
+        android:text="Voir historique"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F4600"
+        android:elevation="10dp"
+        android:layout_alignParentEnd="true"
+   />
+
+
+
+
+    <!--android:backgroundTint="#05157E" 027C00-->
+
+
+    <com.google.android.material.button.MaterialButton
+        android:textAppearance="@android:style/TextAppearance.Widget.Button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/historique_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:layout_alignTop="@id/state_indicator_2"
+        android:textFontWeight="20"
+        android:text="Voir historique"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F4600"
+        android:elevation="10dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:textAppearance="@android:style/TextAppearance.Widget.Button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/historique_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:layout_alignTop="@id/state_indicator_3"
+        android:textFontWeight="20"
+        android:text="Voir historique"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F4600"
+        android:elevation="10dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:textAppearance="@android:style/TextAppearance.Widget.Button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/historique_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:layout_alignTop="@id/state_indicator_4"
+        android:textFontWeight="20"
+        android:text="Voir historique"
+        android:textColor="@color/white"
+        android:backgroundTint="#0F4600"
+        android:elevation="10dp"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>

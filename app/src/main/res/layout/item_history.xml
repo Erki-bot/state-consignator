@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/transparent_gray"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp"
+    android:layout_margin="10dp"
+    android:elevation="16dp">
+<RelativeLayout
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/default_title_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hist_date_title"
+        android:text="Date : "
+        />
+    <TextView
+
+        style="@style/default_title_text_style"
+       android:layout_alignStart="@id/tv_hist_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hist_date"
+        android:text="@string/default_date"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hist_date_title"
+        android:id="@+id/tv_hist_hour_title"
+        android:text="Heure : "
+        style="@style/default_title_text_style"/>
+    <TextView
+        android:layout_marginStart="20dp"
+        style="@style/default_title_text_style"
+        android:layout_toEndOf="@id/tv_hist_hour_title"
+        android:layout_alignTop="@id/tv_hist_hour_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hist_hour"
+        android:text="@string/default_hour"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etat : "
+        style="@style/default_title_text_style"
+        android:layout_below="@id/tv_hist_hour_title"
+        android:id="@+id/tv_hist_state_title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        android:id="@+id/tv_hist_state"
+        android:layout_alignStart="@id/tv_hist_hour"
+        style="@style/default_title_text_style"
+        android:layout_alignTop="@id/tv_hist_state_title"/>
+    <ImageView
+        android:id="@+id/hist_state_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_state_indicator"
+        android:layout_alignTop="@id/tv_hist_state"
+        android:scaleType="centerCrop"
+        android:layout_toEndOf="@id/tv_hist_state"
+        android:layout_marginStart="40dp"
+        app:tint="@color/green" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
